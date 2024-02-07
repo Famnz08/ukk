@@ -1,0 +1,78 @@
+/* Login.css */
+
+body {
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../gambar/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #ffffff00; /* White background for the card */
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Increased box shadow for a subtle effect */
+    margin: 0 auto;
+    box-shadow: #23272b;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    border: 1px solid #ced4da00; /* Soft gray border color */
+    border-radius: 10px;
+    padding: 25px; /* Increased padding for better visual appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Subtle box shadow for a modern look */
+}
+
+.form-control-user {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #a7a5a5;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control-user:hover {
+    border-color: #6c757d;
+}
+
+
+.form-control-user:hover {
+    border-color: #6c757d; /* Darker border color on hover */
+}
+
+.btn-user {
+    width: 100%;
+    padding: 12px;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn-user:hover {
+    background-color: #23272b; /* Darker background on hover */
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-end {
+    text-align: right;
+    margin-top: 10px;
+    color: #6c757d; /* Subdued color for additional text */
+}

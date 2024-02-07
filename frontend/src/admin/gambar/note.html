@@ -1,0 +1,65 @@
+<form>
+    <div className="row">
+        <div className="col-6">
+            <p className="fw-bold">Kategori Gambar</p>
+            <select
+                name="id_kategori"
+                onChange={handleChange}
+                value={formData.id_kategori}
+                className="form-control" required
+            >
+                <option value="">Pilih Kategori</option>
+                {kategoriOptions.map((kategori) => (
+                    <option key={kategori.id_kategori} value={kategori.id_kategori}>
+                        {kategori.nama_kategori}
+                    </option>
+                ))}
+            </select>
+        </div>
+        <div className="col-6">
+            <p className="fw-bold">Nama/Judul Gambar</p>
+            <input
+                type="text"
+                name="nama_gambar"
+                onChange={handleChange}
+                value={formData.nama_gambar}
+                className="form-control"
+                required
+            />
+        </div>
+    </div>
+    <p className="fw-bold mt-3">Gambar</p>
+    <input
+        type="file"
+        name="gambar"
+        onChange={handleChange}
+        className="form-control"
+        required
+    />
+    <div className="image-preview-container">
+        {previewImage && (
+            <div className="mt-2">
+                <img
+                    src={previewImage}
+                    alt="Preview"
+                    style={{ maxWidth: '50%', height: '50%', borderRadius: '5%' }}
+                />
+                <a
+                    role="button"
+                    onClick={handleCancelImage}
+                    className="cancel-button"
+                >
+                    <i className="fas fa-times text-danger"></i>
+                </a>
+            </div>
+        )}
+    </div>
+    <p className="fw-bold mt-3">Deskripsi Gambar</p>
+    <textarea
+        name="deskripsi"
+        onChange={handleChange}
+        value={formData.deskripsi}
+        className="form-control"
+        required
+    ></textarea>
+</form>
